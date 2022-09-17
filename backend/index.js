@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 //add customer
 app.post('/add/customer', (req, res) => {
   const data = addCustomer(req.body)
-  res.send(data)
+  res.send(req.body)
 })
 
 //update the customer -- phone no. is a unique key so we use phone number as identifier and update the customer data
